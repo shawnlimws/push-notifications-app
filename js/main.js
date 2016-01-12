@@ -26,6 +26,7 @@ subscribeButton.addEventListener('click', function () {
   }
 })
 
+// subscribe and unsubscribe button
 function subscribe () {
   reg.pushManager.subscribe({userVisibleOnly: true}).then(function (pushSubscription) {
     sub = pushSubscription
@@ -45,3 +46,6 @@ function unsubscribe () {
     subscribeButton.textContent = 'Subscribe'
   })
 }
+
+// database features
+var db = new PouchDB('http://localhost:5984/omgitworks')

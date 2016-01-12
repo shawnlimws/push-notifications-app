@@ -23,6 +23,7 @@
   "homepage": "https://github.com/GoogleChrome/push-notifications#readme",
   "dependencies": {
     "browserify": "^13.0.0",
-    "http-server": "^0.8.5"
+    "http-server": "^0.8.5",
+    "nodemon": "^1.8.1"
   }
 }

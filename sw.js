@@ -38,7 +38,7 @@ self.addEventListener('push', function (event) {
   event.waitUntil(
     self.registration.showNotification(title, {
       'body': 'Wazzup buttercub',
-      'icon': 'images/icon.png'
+      'icon': './images/icon.png'
     }))
 })
 
