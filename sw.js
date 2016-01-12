@@ -19,6 +19,8 @@
 
 // Version 0.1
 
+/* global self clients */
+
 console.log('Started', self)
 
 self.addEventListener('install', function (event) {

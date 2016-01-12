@@ -33,6 +33,16 @@ function subscribe () {
     console.log('Subscribed! Endpoint:', sub.endpoint)
     subscribeButton.textContent = 'Unsubscribe'
     isSubscribed = true
+    db.put({
+      _id: sub.endpoint
+    }).then(function (response) {
+      // handle response
+    }).catch(function (err) {
+      console.log(err)
+    })
+    db.info().then(function (info) {
+      console.log(info)
+    })
   })
 }
 
@@ -47,5 +57,10 @@ function unsubscribe () {
   })
 }
 
-// database features
-var db = new PouchDB('http://localhost:5984/omgitworks')
+// database code
+/* global PouchDB */
+var db = new PouchDB('http://localhost:5984/crmusers');
+// db.info().then(function (info) {
+//   console.log(info)
+// })
+// PouchDB.debug.enable('*')

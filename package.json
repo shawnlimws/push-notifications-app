@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Push notifications codelab.",
   "scripts": {
-    "start": "http-server"
+    "start": "npm run build-js && npm run start-server",
+    "start-server": "http-server",
+    "test": "standard",
+    "build-js": "browserify js/main.js --outfile main.js --transform babelify"
   },
   "devDependencies": {
     "eslint": "^1.8.0",
@@ -22,8 +25,12 @@
   },
   "homepage": "https://github.com/GoogleChrome/push-notifications#readme",
   "dependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "http-server": "^0.8.5",
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.8.1",
+    "pouchdb": "^5.1.0"
   }
 }
