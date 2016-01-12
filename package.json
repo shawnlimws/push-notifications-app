@@ -2,6 +2,9 @@
   "name": "push-notifications",
   "version": "1.0.0",
   "description": "Push notifications codelab.",
+  "scripts": {
+    "start": "http-server"
+  },
   "devDependencies": {
     "eslint": "^1.8.0",
     "gulp": "^3.9.0",
