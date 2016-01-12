@@ -60,10 +60,10 @@ function unsubscribe() {
 
 // database code
 /* global PouchDB */
-var db = new PouchDB('crmusers');
-db.info().then(function (info) {
-  console.log(info);
-});
+var db = new PouchDB('http://localhost:5984/crmusers');
+// db.info().then(function (info) {
+//   console.log(info)
+// })
 // PouchDB.debug.enable('*')
 
 },{}]},{},[1]);

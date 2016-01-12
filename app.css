@@ -10,9 +10,14 @@ body {
   background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .container {
-  height: 50vh;
-  width: 50vw;
+  height: 55vh;
+  width: 55vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,4 +25,24 @@ body {
   border-radius: 15px;
   background: white;
   box-shadow: 10px 10px 31px -4px rgba(0,0,0,0.47);
+  text-align: center;
+}
+
+.blue {
+  text-align: center;
+  background: #55acee;
+  box-shadow: 5px 5px 31px -4px rgba(0,0,0,0.47);
+  height: 50px;
+  width: 100px;
+  color:white;
+  font-size: 0.8em;
+  border-radius: 10px;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
+
+.blue:focus {
+  outline: 0;
 }
