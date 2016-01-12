@@ -1,24 +1,24 @@
 {
-  "name": "push-notification-app",
+  "name": "push-notifications",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "http-server"
+  "description": "Push notifications codelab.",
+  "devDependencies": {
+    "eslint": "^1.8.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-load-plugins": "^1.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shawnlimws/push-notifications-app.git"
+    "url": "git+https://github.com/GoogleChrome/push-notifications.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sam Dutton",
+  "license": "Apache 2",
   "bugs": {
-    "url": "https://github.com/shawnlimws/push-notifications-app/issues"
+    "url": "https://github.com/GoogleChrome/push-notifications/issues"
   },
-  "homepage": "https://github.com/shawnlimws/push-notifications-app#readme",
+  "homepage": "https://github.com/GoogleChrome/push-notifications#readme",
   "dependencies": {
-    "http-server": "^0.8.5",
-    "nodemon": "^1.8.1",
-    "pouchdb": "^5.1.0"
+    "browserify": "^13.0.0"
   }
 }
