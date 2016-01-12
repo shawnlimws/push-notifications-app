@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/shawnlimws/push-notifications-app#readme",
   "dependencies": {
-    "http-server": "^0.8.5"
+    "http-server": "^0.8.5",
+    "nodemon": "^1.8.1",
+    "pouchdb": "^5.1.0"
   }
 }

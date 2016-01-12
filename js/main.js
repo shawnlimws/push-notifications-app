@@ -1,4 +1,5 @@
 'use strict'
+/* global PouchDB */
 
 var reg
 var sub
@@ -18,6 +19,7 @@ if ('serviceWorker' in navigator) {
   })
 }
 
+// button function
 subscribeButton.addEventListener('click', function () {
   if (isSubscribed) {
     unsubscribe()
@@ -45,3 +47,7 @@ function unsubscribe () {
     subscribeButton.textContent = 'Subscribe'
   })
 }
+
+// db function
+var PouchDB = require('pouchdb')
+var db = new PouchDB('http://localhost:5984/omg')
