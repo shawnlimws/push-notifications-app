@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shawnlimws/push-notifications-app/issues"
   },
-  "homepage": "https://github.com/shawnlimws/push-notifications-app#readme"
+  "homepage": "https://github.com/shawnlimws/push-notifications-app#readme",
+  "dependencies": {
+    "http-server": "^0.8.5"
+  }
 }
