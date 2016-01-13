@@ -74,7 +74,7 @@ function unsubscribe () {
 
 // database code
 /* global PouchDB */
-var db = new PouchDB('http://localhost:5984/crmusers')
+var db = new PouchDB('https://push-push.herokuapp.com/crmuser')
 // db.info().then(function (info) {
 //   console.log(info)
 // })
