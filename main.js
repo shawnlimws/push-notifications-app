@@ -34,16 +34,18 @@ function subscribe() {
     console.log('Subscribed! Endpoint:', sub.endpoint);
     subscribeButton.textContent = 'Unsubscribe';
     isSubscribed = true;
+    var emailString = document.querySelector('input').value
     db.put({
-      _id: sub.endpoint
+      _id: emailString,
+      endpointID: sub.endpoint
     }).then(function (response) {
       // handle response
     }).catch(function (err) {
       console.log(err);
     });
-    db.info().then(function (info) {
-      console.log(info);
-    });
+    // db.info().then(function (info) {
+    //   console.log(info)
+    // })
   });
 }
 

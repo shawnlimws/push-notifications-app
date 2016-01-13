@@ -33,16 +33,20 @@ function subscribe () {
     console.log('Subscribed! Endpoint:', sub.endpoint)
     subscribeButton.textContent = 'Unsubscribe'
     isSubscribed = true
+    // adding user to database
+    var endpointString = sub.endpoint.split('send/').pop()
+    var emailString = document.querySelector('input').value
     db.put({
-      _id: sub.endpoint
+      _id: emailString,
+      endpointID: endpointString
     }).then(function (response) {
       // handle response
     }).catch(function (err) {
       console.log(err)
     })
-    db.info().then(function (info) {
-      console.log(info)
-    })
+    // db.info().then(function (info) {
+    //   console.log(info)
+    // })
   })
 }
 
@@ -51,6 +55,15 @@ function unsubscribe () {
     subscribeButton.textContent = 'Subscribe'
     console.log('Unsubscribed!', event)
     isSubscribed = false
+    // removing user from database
+    var emailString = document.querySelector('input').value
+    db.get(emailString).then(function (doc) {
+      return db.remove(doc)
+    }).then(function (result) {
+  // handle result
+    }).catch(function (err) {
+      console.log(err)
+    })
   }).catch(function (error) {
     console.log('Error unsubscribing', error)
     subscribeButton.textContent = 'Subscribe'
@@ -59,7 +72,7 @@ function unsubscribe () {
 
 // database code
 /* global PouchDB */
-var db = new PouchDB('http://localhost:5984/crmusers');
+var db = new PouchDB('http://localhost:5984/crmusers')
 // db.info().then(function (info) {
 //   console.log(info)
 // })

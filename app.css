@@ -16,8 +16,8 @@ p {
 }
 
 .container {
-  height: 55vh;
-  width: 55vw;
+  height: 90vh;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +25,14 @@ p {
   border-radius: 15px;
   background: white;
   box-shadow: 10px 10px 31px -4px rgba(0,0,0,0.47);
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+input {
+  height: 48px;
+  width: 250px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -45,4 +53,15 @@ p {
 
 .blue:focus {
   outline: 0;
+}
+
+button {
+  margin-top: 25px;
+}
+
+@media (min-width: 500px) {
+  .container {
+    height: 55vh;
+    width: 55vw;
+  }
 }
