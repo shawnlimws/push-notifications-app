@@ -24,8 +24,6 @@ subscribeButton.addEventListener('click', function () {
     unsubscribe();
   } else {
     subscribe();
-    document.querySelector('input').value = '';
-    document.querySelector('input').placeholder = 'type email here to unsubscribe';
   }
 });
 
@@ -50,6 +48,8 @@ function subscribe() {
     // db.info().then(function (info) {
     //   console.log(info)
     // })
+    document.querySelector('input').value = '';
+    document.querySelector('input').placeholder = 'type email here to unsubscribe';
   });
 }
 
