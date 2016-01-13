@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Push notifications codelab.",
   "scripts": {
-    "start": "npm run build-js && npm run start-server",
+    "start": "npm run start-server",
     "start-server": "http-server",
-    "test": "standard",
-    "build-js": "browserify js/main.js --outfile main.js --transform babelify"
+    "test": "standard"
   },
   "devDependencies": {
     "eslint": "^1.8.0",

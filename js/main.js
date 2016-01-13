@@ -48,7 +48,7 @@ function subscribe () {
     //   console.log(info)
     // })
     document.querySelector('input').value = ''
-    document.querySelector('input').placeholder = 'type email here to unsubscribe'
+    document.querySelector('input').placeholder = 'type email here'
   })
 }
 
