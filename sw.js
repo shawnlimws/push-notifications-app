@@ -19,6 +19,8 @@
 
 // Version 0.1
 
+/* global self clients */
+
 console.log('Started', self)
 
 self.addEventListener('install', function (event) {
@@ -38,7 +40,7 @@ self.addEventListener('push', function (event) {
   event.waitUntil(
     self.registration.showNotification(title, {
       'body': 'Wazzup buttercub',
-      'icon': 'images/icon.png'
+      'icon': './images/icon.png'
     }))
 })
 

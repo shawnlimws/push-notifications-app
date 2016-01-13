@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Push Notification codelab</title>
+  <script src="pouchdb-5.1.0.min.js"></script>
+  <link rel="shortcut icon" href="images/icon.png"/>
+  <link rel="stylesheet" href="app.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Push Notification</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <h1>Push Notification codelab</h1>
-  <p>This page must be accessed using HTTPS or via localhost.</p>
-  <button disabled>Subscribe</button>
-  <script src="js/main.js"></script>
+  <div class="container">
+    <h1>Push Notification Codelab</h1>
+    <p>This page must be accessed using HTTPS or via localhost.</p>
+    <input type="email" placeholder="Type your email here" x-moz-errormessage="Please specify a valid email address.">
+    <button class="blue" disabled>Subscribe</button>
+    <script src="js/main.js"></script>
+  </div>
 </body>
 </html>
