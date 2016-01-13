@@ -4,8 +4,7 @@
   "description": "Push notifications codelab.",
   "scripts": {
     "start": "npm run start-server",
-    "start-server": "http-server",
-    "test": "standard"
+    "start-server": "http-server"
   },
   "devDependencies": {
     "eslint": "^1.8.0",
