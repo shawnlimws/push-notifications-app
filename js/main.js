@@ -74,7 +74,12 @@ function unsubscribe () {
 
 // database code
 /* global PouchDB */
-var db = new PouchDB('https://shawnlimws.cloudant.com/crmusers')
+var db = new PouchDB('https://shawnlimws.cloudant.com/crmusers', {
+  auth: {
+    username: 'beendtweranteededideplam',
+    password: 'ebc1151d92a97d8649d4887945da51980a682b78'
+  }
+})
 // db.info().then(function (info) {
 //   console.log(info)
 // })
