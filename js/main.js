@@ -84,3 +84,13 @@ var db = new PouchDB('https://shawnlimws.cloudant.com/crmusers', {
 //   console.log(info)
 // })
 // PouchDB.debug.enable('*')
+
+// retrieving database
+db.allDocs({
+  include_docs: true
+}).then(function (result) {
+  var endpointsArray = result.rows.map(function (line) {
+    return line.doc.endpointID
+  })
+  // console.log(endpointsArray)
+})
