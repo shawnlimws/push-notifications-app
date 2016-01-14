@@ -39,6 +39,7 @@ input {
   height: 48px;
   width: 300px;
   font-size: 1.5em;
+  margin-right: 10px;
 }
 
 button {
@@ -50,6 +51,7 @@ button {
   background-color: #f05f40;
   color: white;
   border: 0;
+  margin-left: 10px;
 }
 
 button:hover {
