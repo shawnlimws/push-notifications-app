@@ -1,4 +1,4 @@
-![demo](https://raw.githubusercontent.com/shawnlimws/push-notifications-app/master/images/header.jpg)
+![demo](https://raw.githubusercontent.com/shawnlimws/push-notifications-app/master/images/screenshot.png)
 
 
 # Push Notifications
