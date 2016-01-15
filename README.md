@@ -1,4 +1,5 @@
-![demo](images/screenshot.PNG)
+![demo](https://raw.githubusercontent.com/shawnlimws/push-notifications-app/master/images/header.jpg)
+
 
 # Push Notifications
 ![Build Status](https://travis-ci.org/shawnlimws/push-notifications-app.svg?branch=master)
