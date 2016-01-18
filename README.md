@@ -12,7 +12,7 @@ Simple experiment with [Google Cloud Messaging](https://developers.google.com/cl
 Made use of [PouchDB](http://pouchdb.com/) to store the subscriber endpoints and allow the crm to pull the data and send new notifications to entire subscriber list.
 
 ### 2. Service Worker Tutorial
-Excellent place to learn the basic code for implementing a service worker.
+The Google Service Worker Tutorial offers and excellent place to learn the basic code for implementing a service worker.
 
 ## Collaborators
 1. Shawn Lim - @shawnlimws
